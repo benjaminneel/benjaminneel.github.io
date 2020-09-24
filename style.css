@@ -48,7 +48,7 @@ h2 {
 
 #tag, .info__tag, .main__tag {
   margin: 0 0 20px 0;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase; }
@@ -206,9 +206,9 @@ h2 {
       transform: translateY(-60%); } }
 .info__headshot, .info__headshot-img {
   display: block;
-  margin: auto;
-  width: 137px;
-  height: 170px;
+  margin-top: 50px;
+  width: 178px;
+  height: 221px;
   border-radius: 200px;
   box-shadow: 0 5px 10px #3A3E4A; }
 .info__tag {
