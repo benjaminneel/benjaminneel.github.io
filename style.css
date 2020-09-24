@@ -46,7 +46,7 @@ h2 {
   font-size: 18px;
   font-weight: 700; }
 
-#tag, .info__tag, .main__tag {
+#tag, .main__tag {
   margin: 0 0 20px 0;
   font-size: 14px;
   font-weight: 600;
@@ -56,6 +56,15 @@ h2 {
     #tag, .info__tag, .main__tag {
       margin: 5px 30px 0 0; } }
 
+#tag, .info__tag {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+  @media (min-width: 1024px) {
+    #tag, .info__tag, .main__tag {
+      margin: 5px 30px 0 0; } }
 #fadeUp-animation, .info-footer__kitchener, .info-footer__social-icon, .info-footer__social-icon--dribbble, .info-footer__social-icon--linkedin, .info-footer__social-icon--instagram, .info-footer__social-icon--github, .info-footer__social-icon--twitter, .main__container-about, .main__container-projects, .main__container-clients, .main__container-links, .main__container-pubs, .main__container-experience, .main__container-resume, .main__resume {
   opacity: 0;
   animation: fadeUp ease-in 1;
@@ -208,6 +217,7 @@ h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 25px;
   width: 178px;
   height: 221px;
   border-radius: 200px;
