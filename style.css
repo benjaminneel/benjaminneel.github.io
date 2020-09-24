@@ -206,7 +206,8 @@ h2 {
       transform: translateY(-60%); } }
 .info__headshot, .info__headshot-img {
   display: block;
-  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 178px;
   height: 221px;
   border-radius: 200px;
