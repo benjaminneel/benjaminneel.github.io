@@ -448,8 +448,7 @@ h2 {
       .main__experience:first-of-type {
         margin-top: 3px; } }
   .main__experience-year {
-<!--    float: right; -->
-    display: block;
+   float: right; 
     font-weight: 700;
     line-height: 26px; }
   .main__experience-info {
