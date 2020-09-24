@@ -199,6 +199,9 @@ h2 {
       overflow-y: scroll;
       -webkit-overflow-scrolling: touch;
       overflow-x: hidden; } }
+.foo {
+  margin-top: 30px;
+}
 
 .info-main {
   opacity: 0;
