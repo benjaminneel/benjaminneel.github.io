@@ -380,7 +380,7 @@ h2 {
   @media (min-width: 1024px) {
     .main__copy {
       float: right;
-      width: 75%;
+      width: 65%;
       max-width: 500px; } }
   .main__copy a {
     padding: 0 4px 2px 4px;
