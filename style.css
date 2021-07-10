@@ -327,7 +327,8 @@ h2 {
   clear: both;
   height: auto;
   display: block;
-  margin: 40px 0 30px 0;
+  margin: 40px 0 0 0;
+  margin-bottom: 30px;
   overflow: visible; }
   .main__container-about {
     animation-delay: 0.6s; }
