@@ -182,7 +182,7 @@ h2 {
       right: 0;
       height: 100%;
       width: 45%;
-      overflow-y: scroll;
+      overflow-y: visible;
       -webkit-overflow-scrolling: touch;
       overflow-x: hidden; } }
 .foo {
