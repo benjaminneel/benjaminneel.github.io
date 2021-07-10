@@ -160,7 +160,7 @@ h2 {
   display: inline-block;
   position: relative;
   width: 100%;
-  min-height: 490px;
+  height: auto;
   background-color: #4C6493; }
   @media (min-width: 768px) {
     .container-info {
