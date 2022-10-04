@@ -1,57 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Benjamin G. Neel, M.D., Ph.D.">
+	<title>Benjamin G. Neel, M.D., Ph.D.</title>
+<style>
+.item1 { grid-area: header; text-align: center;font-family: "Open Sans", "Helvetica Neue", sans-serif;  color: #4c6493;
+  font-weight: 700;}
+.item2 { grid-area: aboutme; text-align: left;font-family: "Open Sans", "Helvetica Neue", sans-serif; font-size: 15px;font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase; color: #4c6493;}
+.item3 { grid-area: right1; text-align: left;font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;}
+.item4 { grid-area: biotech; text-align: left;font-family: "Open Sans", "Helvetica Neue", sans-serif; font-size: 15px;font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase; color: #4c6493;}
+.item5 { grid-area: right2; text-align: left;font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;}
+.item6 { grid-area: academic; text-align: left;font-family: "Open Sans", "Helvetica Neue", sans-serif; font-size: 15px;font-weight: 700;
+  letter-spacing: 1px; 
+  text-transform: uppercase; color: #4c6493;}
+.item7 { grid-area: right3; text-align: left;font-family: "Open Sans", "Helvetica Neue", sans-serif;font-size: 15px;}
+.item8 { grid-area: pubs; text-align: left;font-family: "Open Sans", "Helvetica Neue", sans-serif; font-size: 15px;font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase; color: #4c6493;}
+.item9 { grid-area: right4; text-align: left;font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;}
+.item10{ grid-area: related; text-align: left;font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase; color: #4c6493;}
+.item11 { grid-area: right5; text-align: left;font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;}
+  
+.headshot-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 178px;
+  height: 221px;
+  border-radius: 200px;
+  box-shadow: 0 5px 10px #3A3E4A; }
 
-      
-<!doctype html>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto  ;
+  grid-template-areas:
+    'header header'
+    ' aboutme right1'
+    ' biotech right2'
+    ' academic right3'
+    ' pubs right4'
+    ' related right5'
+    ;
+  gap: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+}
 
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  
+  padding: 20px 0;
+  
+}
 
-<html lang="en">
+.item1 {
+  grid-colum: 1 / 3;
+}
+</style>
+</head>
+<body>
 
-	<head>
-
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<meta name="description" content="Benjamin G. Neel, M.D., Ph.D.">
-	
-
-	  <title>Benjamin G. Neel, M.D., Ph.D.</title>
-	  
-
-	  <link rel="stylesheet" href="./style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-<!-- 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-	  <!--[if lt IE 9]>
-	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	  <![endif]-->
-
-		</head>
-
-	<body>
-
-		<div class="container-info">
-			<a name="top-mobile"></a>
-			<div class="info-main">
-				<div class="foo">
-				<div class="info__headshot"><img class="info__headshot-img" src="ben_neel_half.jpg">
-        </div>
-				<div class="info__elevator">
-					<h1 class="info__elevator-text">
-						Benjamin G. Neel, M.D., Ph.D.
-					</h1>
-				</div>
-				<div class="info__tag">Working to cure cancer in our lifetime. 
-				</div>
-				</div> <!-- close foo -->
-			</div> <!--info-main-->
-		</div> <!--container-info-->
-
-		<div class="container-main">
-			<a name="top-desktop"></a>
-			<div class="main__container-about">
-				<div class="main__tag">About Me</div>
-				<p class="main__copy">
-        As a physician-scientist, I believe that we have the best chance of
+<div class="grid-container">
+  <div class="item1"><img src="ben_neel_half.jpg" class=headshot-img >
+  <h1>Benjamin G. Neel, M.D., Ph.D.</h1>
+<h2><i>Working to cure cancer in our lifetime.</i></h2>
+</div>
+  <div class="item2">About Me</div>
+  <div class="item3">As a physician-scientist, I believe that we have the best chance of
  impacting patient survival when scientists and physicians
 work together to understand the biology of cancer and its
 vulnerabilities, and to then translate this understanding from the bench to the bedside.
@@ -65,114 +92,52 @@ phosphatases</i> which are involved in many normal cell functions. I also study
 the role of RAS/ERK pathway mutations in developmental diseases and
 cancer, and the biology of breast and ovarian cancers. 
 					<br>&nbsp; <br>
-		I am a member of the <a href="https://aap-online.org/">American Academy of Physicians</a> and the <a href="http://www.nasonline.org/">
-					National Academy of Sciences</a>. 
-					<br>&nbsp; <br>
-        </p>
-			</div> <!--main_container-about-->
-
-			<div class="main__container-clients">
-
-				<div class="main__tag">Biotech</div>
-				<p class="main__copy">
-					
-					Lighthorse Therapeutics, co-founder and SAB member<br>
+		I am a member of the <a href="https://aap-online.org/">American Academy of Physicians</a> and the <a href="http://www.nasonline.org/"> National Academy of Sciences</a>. 
+</div>  
+  <div class="item4">Biotech</div>
+  <div class="item5">Lighthorse Therapeutics, co-founder and SAB member<br>
 					<a href="https://navirepharma.com/" target="_blank">Navire Pharma</a>, co-founder and SAB member<br>
 					<a href="https://www.boehringer-ingelheim.com/press-release/acquisitionofnorthernbiologics" target="_blank">Northern Biologics</a>, co-founder. 
 						Acquired by Boehringer Ingelheim in May, 2020<br>
 					<a href="https://www.arvinas.com/" target="_blank">Arvinas, Inc.</a>, SAB Member<br>
-					<a href="https://www.recursion.com/" target="_blank">Recursion</a>, SAB Member
-				
-				</p>
-			</div> <!--main__container-clients-->
-
-			<div class="main__container-experience">
-
-				<div class="main__tag">Academic</div>
-
-				<div class="main__experience">
-					<div class="main__experience-info">
-						<div class="main__experience-info-company">Laura and Isaac Perlmutter Cancer Center at NYU</div>
-						<div class="main__experience-info-position">Director (2015 - present)</div>
-					</div>
-				</div> <!--main_experience-->
-      
-      				<div class="main__experience">
-					<div class="main__experience-info">
-						<div class="main__experience-info-company">NYU School of Medicine</div>
-						<div class="main__experience-info-position">Professor, Department of Medicine (2015 - present)</div>
-					</div>
-				</div> <!--main_experience-->
-        
-				<div class="main__experience">
-					<div class="main__experience-info">
-						<div class="main__experience-info-company">The Campbell Family Institute for Cancer Research, Toronto, ON</div>
-						<div class="main__experience-info-position">Founding Director (2008 - 2014)</div>
-					</div>
-				</div> <!--main_experience-->
-      
-        			<div class="main__experience">
-					<div class="main__experience-info">
-						<div class="main__experience-info-company">Princess Margaret Hospital Cancer Center, Toronto, ON</div>
-						<div class="main__experience-info-position">Director, Research (2007 - 2014)</div>
-					</div>
-				</div> <!--main_experience-->
-				
-				<div class="main__experience">
-					<div class="main__experience-info">
-						<div class="main__experience-info-company">University of Toronto, Toronto, ON</div>
-						<div class="main__experience-info-position">Professor of Medical Biophysics (2007 - 2015)</div>
-						<div class="main__experience-info-position">Canada Research Chair, Tier 1 (2007 - 2015)</div>
-					</div>
-				</div> <!--main_experience-->
-
-				<div class="main__experience">
-					<div class="main__experience-info">
-						<div class="main__experience-info-company">Beth Israel Deaconess Medical Center, Boston, MA</div>
-						<div class="main__experience-info-position">Deputy Director, Basic Research, Hematology/Oncology Division (2003 - 2007)</div>
-						<div class="main__experience-info-position">Director, Cancer Biology Program (1994 - 2007)</div>
-					</div>
-				</div> <!--main_experience-->
-				
-				<div class="main__experience">
-					<div class="main__experience-info">
-						<div class="main__experience-info-company">Harvard Medical School, Boston, MA</div>
-						<div class="main__experience-info-position">William B. Castle Professor of Medicine (2006 - 2007</div>
-						<div class="main__experience-info-position">Professor of Medicine (1999 - 2007)</div>
-						<div class="main__experience-info-position">Associate Professor of Medicine (1993 - 1999)</div>
-						<div class="main__experience-info-position">Assistant Professor of Medicine (1988 - 1993)</div>
-					</div>
-				</div> <!--main_experience-->
-
-			</div> <!--main_container-experience-->
-
-<div class="main__container-pubs">
-	<div class="main__tag">Publications</div>
-		<p class="main__copy">
-        	Updated publications list on <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Neel+BG" target="_blank">PubMed</a>
-			
-		</p>
-  </div> <!--main_container-pubs-->
-
-<div class="main__container-links">
-	<div class="main__tag">Related Links</div>
-		<p class="main__copy">
+					<a href="https://www.recursion.com/" target="_blank">Recursion</a>, SAB Member</div>
+  <div class="item6">Academic</div>
+  <div class="item7">Laura and Isaac Perlmutter Cancer Center at NYU Langone Medical Center<br>
+  Director (2015 - present)<br>
+  NYU School of Medicine<br>
+  Professor, Department of Medicine (2015 - present)
+  <p>
+  The Campbell Family Institute for Cancer Research, Toronto, ON<br>
+	Founding Director (2008 - 2014)
+    </p>
+    <p>
+	Princess Margaret Hospital Cancer Center, Toronto, ON<br>
+		Director, Research (2007 - 2014)
+        </p><p>
+        University of Toronto, Toronto, ON<br>
+		Professor of Medical Biophysics (2007 - 2015)<br>
+		Canada Research Chair, Tier 1 (2007 - 2015)
+        </p><p>
+        Beth Israel Deaconess Medical Center, Boston, MA<br>
+		Deputy Director, Basic Research, Hematology/Oncology Division (2003 - 2007)<br>
+		Director, Cancer Biology Program (1994 - 2007)<br>
+		</p><p>
+        Harvard Medical School, Boston, MA<br>
+		William B. Castle Professor of Medicine (2006 - 2007<br>
+		Professor of Medicine (1999 - 2007)<br>
+		Associate Professor of Medicine (1993 - 1999)<br>
+		Assistant Professor of Medicine (1988 - 1993)
+        </p></div>		
+  <div class="item8">Publications</div>  
+  <div class="item9">Updated publications list on <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Neel+BG" target="_blank">PubMed</a></div>
+  <div class="item10">Related Links</div>
+  <div class="item11">
 			<a href="https://theneellab.com/" target="_blank">The Neel Lab website</a>
 				 <br>
 			<a href="https://med.nyu.edu/faculty/benjamin-g-neel" target="_blank"> Benjamin G. Neel NYU Faculty page<a>
+</div>
 
-		</p>
-	</div> <!--main_container-links-->
+</div>
 
-
-<div class="main__container-resume">
-
-	</div> <!--main_container-resume-->
-
-</div> <!-- container-main -->
-            
-<!-- 		<script src="js/nodePattern.js"></script>
- -->
-	</body>
-
+</body>
 </html>
